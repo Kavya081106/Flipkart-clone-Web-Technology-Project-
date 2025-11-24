@@ -1,0 +1,245 @@
+/* Container max-width */
+.maxw {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Header */
+.fk-header {
+  background-color: #2874f0;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;  /*stacking order top*/
+}
+
+.fk-logo {
+  height: 40px;
+}
+
+/* Search box */
+.search-box {
+  flex-grow: 1;   
+  /* how much a flex item should grow relative to the other flex items(occupy space in input) */
+  background: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.search-box .input-group-text {
+  background: #fff;
+  border: none;
+  color: #555;
+}
+
+/* Navigation buttons */
+.nav-btn {
+  color: #fff;
+  font-weight: 500;
+  background: none;
+  border: none;
+}
+
+.nav-btn:hover {
+  color: #ffe500;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  min-width: 220px;
+  font-size: 14px;
+}
+
+.dropdown-menu img {
+  height: 18px;
+  margin-right: 8px;
+}
+
+/* Caret icon ▼ */
+.caret-icon {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+/* Carousel */
+.carousel-inner img {
+  height: 300px;
+  object-fit: cover;
+  /* completely cover the container(aspect ratio maintained) */
+}
+
+/* Section cards */
+.section-card {
+  background: #fff;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+/* Product cards */
+.fk-card {
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  transition: all 0.2s ease;
+  /* transition → enables smooth animation between property values.
+all → applies the transition to all animatable properties (like color, background, width, height, transform, etc.).
+0.2s → duration = 0.2 seconds (the speed of the animation).
+ease → timing function, meaning:
+Starts slow
+Speeds up in the middle
+Ends slow */
+  height: 100%;
+}
+
+/* Make dropdown open on hover instead of click */
+.dropdown:hover .dropdown-menu {
+  display: block;
+  /* Takes the full width available (by default). Even if the content is small,
+    the element stretches across the parent’s width. Starts on a new line. Nothing can sit beside it unless you force it (like with float or flex). */
+}
+
+/* Rotate caret on hover OR when dropdown is open */
+.caret-icon {
+  transition: transform 0.3s ease;
+  display: inline-block;
+  /* Like inline → it flows in the same line with other elements (doesn’t force a line break). Like block → you can set width,
+    height,
+    margin,
+    and padding. */
+}
+
+.dropdown:hover .caret-icon,
+.dropdown.show .caret-icon {
+  transform: rotate(180deg);
+}
+
+
+
+
+.fk-card:hover {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+  transform: translateY(-2px);
+}
+
+.fk-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.fk-card .name {
+  font-size: 14px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.fk-card .price {
+  font-size: 13px;
+  color: #388e3c;
+  font-weight: 600;
+}
+
+/* Signup link in dropdown */
+.signup-text {
+  color: blue;
+  display: inline;
+}
+
+/* Margin for icons */
+.icon-margin {
+  margin: 4px;
+}
+
+/* White button (3-dot menu) */
+.btn-white {
+  background: #fff;
+  border: none;
+}
+
+.img-80 {
+  height: 80px !important;
+  margin: 4px;
+}
+
+.img-300 {
+  height: 300px !important;
+}
+
+.img-full {
+  width: 100% !important;
+}
+
+/* Brand directory + categories */
+.content {
+  padding: 20px 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.content h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.category {
+  margin-bottom: 15px;
+}
+
+.category .title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.category .links a {
+  text-decoration: none;
+  color: #565656;
+  font-size: 12px;
+}
+
+.category .links a:hover {
+  color: #2874f0;
+}
+
+.category .sep {
+  margin: 0 6px;
+  color: #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #172337;
+  color: #fff;
+  font-size: 13px;
+}
+
+footer h6 {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+footer a {
+  font-size: 12px;
+}
+
+footer .payment-logos img {
+  background: #fff;
+  border-radius: 3px;
+  padding: 3px;
+}

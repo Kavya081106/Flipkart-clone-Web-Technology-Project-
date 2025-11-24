@@ -1,0 +1,100 @@
+body {
+  background-color: #f1f3f6;
+  font-family: Arial, sans-serif;
+}
+
+.rog-navbar {
+  background-color: #2874f0;
+}
+
+.navbar-brand img {
+  height: 30px;
+}
+
+.search-bar {
+  width: 55%;
+}
+
+.product-section {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.product-gallery img {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.thumbs img {
+  width: 60px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #212121;
+}
+
+.discount {
+  color: green;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.offers ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.offers li::before {
+  content: "✔";
+  color: green;
+  margin-right: 8px;
+}
+
+.btn-buy,
+.btn-cart {
+  width: 48%;
+  font-size: 16px;
+}
+
+.highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlights li::before {
+  content: "•";
+  color: #2874f0;
+  margin-right: 8px;
+}
+
+.tab-content {
+  padding: 20px;
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: #172337;
+  color: #fff;
+  padding: 30px;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+footer hr {
+  border-color: #444;
+}
